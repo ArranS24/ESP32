@@ -1,0 +1,32 @@
+#define PIN_RED    21 // Defines the pin connected to the red part of the LED
+#define PIN_GREEN  23 // Defines the pin connected to the green part of the LED
+#define PIN_BLUE   22 // Defines the pin connected to the blue part of the LED
+
+void setup() {
+  pinMode(PIN_RED,   OUTPUT);
+  pinMode(PIN_GREEN, OUTPUT);
+  pinMode(PIN_BLUE,  OUTPUT);
+}
+
+void loop() {
+  // Sets the colour of the light to be red
+  analogWrite(PIN_RED,   255);
+  analogWrite(PIN_GREEN, 0);
+  analogWrite(PIN_BLUE,  0);
+
+  delay(50); // Doesn't change the colour for 0.05 seconds
+
+  // Sets the colour of the light to be green with some red and blue mixed in
+  analogWrite(PIN_RED,   100);
+  analogWrite(PIN_GREEN, 255);
+  analogWrite(PIN_BLUE,  100);
+
+  delay(50); // Doesn't change the colour for 0.05 seconds
+
+  // Sets the colour of the light to be blue
+  analogWrite(PIN_RED,   0);
+  analogWrite(PIN_GREEN, 0);
+  analogWrite(PIN_BLUE,  255);
+
+  delay(50); // Doesn't change the colour for 0.05 seconds
+}
