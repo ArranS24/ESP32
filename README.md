@@ -1,2 +1,2 @@
 # ESP32
-Repo for the assessment task to store all my code
+This repository is used to store all of the code I have written for the IT assessment task for term 3 and also counts to the first 5 marks in the assignment. The code will be kept in md files because I can't find a way to get the c# files. If you copy and paste the code from the file you can easily copy and paste it into audino IDE in order to run it on an ESP32 with the necessary other equipment.
